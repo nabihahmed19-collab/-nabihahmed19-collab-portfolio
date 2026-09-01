@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offline RAG Chatbot for Legal Documents — Nabiha Ahmed</title>
+<meta name="description" content="A fully offline retrieval-augmented chatbot that answers questions from legal PDFs, DOCX, and TXT files.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --card-accent: var(--cat-genai); }</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="topnav-mark" href="index.html">NA</a>
+    <a class="topnav-back" href="index.html#projects">&larr; Back to portfolio</a>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="section-inner reveal">
+    <div class="detail-category">
+      <span class="category-icon" style="color: var(--cat-genai);"><svg viewBox="0 0 16 16" fill="currentColor" stroke="currentColor" stroke-width="1.3"><path d="M8 1.3 L9.4 6.3 L14.4 7.7 L9.4 9.1 L8 14.1 L6.6 9.1 L1.6 7.7 L6.6 6.3 Z"/></svg></span>
+      Gen AI
+    </div>
+    <h1>Offline RAG Chatbot for Legal Documents</h1>
+    <p class="detail-summary">A fully offline retrieval-augmented chatbot that answers questions from legal PDFs, DOCX, and TXT files.</p>
+    <div class="detail-tags">
+      <span class="detail-tag">RAG</span>
+      <span class="detail-tag">Local LLM</span>
+      <span class="detail-tag">Document Q&A</span>
+    </div>
+    
+  </div>
+</header>
+
+<main class="detail-body">
+  <div class="section-inner">
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Context</div>
+      <p>A retrieval-augmented chatbot built for legal documents that can't leave the machine they're stored on.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">The Problem</div>
+      <p>Legal material is often confidential, so calling an external API for embeddings or generation isn't an option no matter how convenient — but the chatbot still needs to answer accurately, grounded only in the actual source documents.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Skills Used</div>
+      <div class="skills-used-list">
+        <span>Python</span>
+        <span>Local LLMs</span>
+        <span>RAG pipelines</span>
+        <span>Document parsing (PDF/DOCX/TXT)</span>
+      </div>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Approach</div>
+      <p>Built the full pipeline — chunking, embedding, retrieval, and generation — to run entirely on local models with no network calls, accepting a mixed folder of PDFs, DOCX, and plain text files as input.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Result</div>
+      <p>100% offline with zero external API dependency, and every answer grounded strictly in retrieved passages rather than the model's general knowledge.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="detail-footer section-inner">
+  <a href="index.html#projects">&larr; All projects</a>
+  <a href="index.html#contact">Get in touch &rarr;</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
