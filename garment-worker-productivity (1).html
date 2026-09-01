@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garment Worker Productivity Classifier — Nabiha Ahmed</title>
+<meta name="description" content="Cleaned a real garment factory dataset and trained classifiers to predict whether a team hits its productivity target.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --card-accent: var(--cat-ml); }</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="topnav-mark" href="index.html">NA</a>
+    <a class="topnav-back" href="index.html#projects">&larr; Back to portfolio</a>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="section-inner reveal">
+    <div class="detail-category">
+      <span class="category-icon" style="color: var(--cat-ml);"><svg viewBox="0 0 16 16" fill="currentColor" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="2.6" r="1.3"/><line x1="8" y1="3.9" x2="8" y2="6"/><line x1="8" y1="6" x2="3.6" y2="9"/><line x1="8" y1="6" x2="12.4" y2="9"/><circle cx="3.6" cy="10.3" r="1.3"/><circle cx="12.4" cy="10.3" r="1.3"/></svg></span>
+      Machine Learning
+    </div>
+    <h1>Garment Worker Productivity Classifier</h1>
+    <p class="detail-summary">Cleaned a real garment factory dataset and trained classifiers to predict whether a team hits its productivity target.</p>
+    <div class="detail-tags">
+      <span class="detail-tag">Python</span>
+      <span class="detail-tag">pandas</span>
+      <span class="detail-tag">scikit-learn</span>
+      <span class="detail-tag">Random Forest</span>
+    </div>
+    
+  </div>
+</header>
+
+<main class="detail-body">
+  <div class="section-inner">
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Context</div>
+      <p>A garment factory's productivity records covering multiple departments, teams, and quarters — 1,197 recorded work sessions in total.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">The Problem</div>
+      <p>The raw data had inconsistent categorical labels (duplicate department names with trailing whitespace), irrelevant columns, and no existing way to predict which teams would actually hit their productivity targets versus fall short.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Skills Used</div>
+      <div class="skills-used-list">
+        <span>Python</span>
+        <span>pandas</span>
+        <span>scikit-learn</span>
+        <span>Decision Trees</span>
+        <span>Random Forests</span>
+        <span>Cross-validation</span>
+        <span>One-hot encoding</span>
+      </div>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Approach</div>
+      <p>Cleaned and re-encoded the dataset (fixed department labels, dropped uninformative columns, one-hot encoded quarter/day/team), then trained a Decision Tree classifier to predict whether a team would meet its productivity target, followed by a Random Forest to compare performance.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Result</div>
+      <p>85% accuracy, 88% precision, 93% recall, and a 90% F1 score on the Decision Tree, holding at 82% mean accuracy across 10-fold cross-validation. The Random Forest reached an 83% out-of-bag score, confirming the result wasn't a lucky split.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="detail-footer section-inner">
+  <a href="index.html#projects">&larr; All projects</a>
+  <a href="index.html#contact">Get in touch &rarr;</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

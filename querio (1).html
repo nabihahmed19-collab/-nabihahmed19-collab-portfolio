@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Querio — Nabiha Ahmed</title>
+<meta name="description" content="An agentic text-to-SQL system — describe what you want in plain English, and it writes and runs the query.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --card-accent: var(--cat-genai); }</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="topnav-mark" href="index.html">NA</a>
+    <a class="topnav-back" href="index.html#projects">&larr; Back to portfolio</a>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="section-inner reveal">
+    <div class="detail-category">
+      <span class="category-icon" style="color: var(--cat-genai);"><svg viewBox="0 0 16 16" fill="currentColor" stroke="currentColor" stroke-width="1.3"><path d="M8 1.3 L9.4 6.3 L14.4 7.7 L9.4 9.1 L8 14.1 L6.6 9.1 L1.6 7.7 L6.6 6.3 Z"/></svg></span>
+      Gen AI
+    </div>
+    <h1>Querio</h1>
+    <p class="detail-summary">An agentic text-to-SQL system — describe what you want in plain English, and it writes and runs the query.</p>
+    <div class="detail-tags">
+      <span class="detail-tag">Pydantic-AI</span>
+      <span class="detail-tag">Gradio</span>
+      <span class="detail-tag">Text-to-SQL</span>
+    </div>
+    <div class="detail-links">
+      <a class="detail-link-btn" href="https://github.com/nabihahmed19-collab/querio-text-to-sql" target="_blank" rel="noopener">View on GitHub</a>
+      <a class="detail-link-btn" href="https://huggingface.co/spaces/NabihaAhmed/querio-text-to-sql" target="_blank" rel="noopener">Try the Live Demo</a>
+    </div>
+  </div>
+</header>
+
+<main class="detail-body">
+  <div class="section-inner">
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Context</div>
+      <p>An agentic text-to-SQL system built to remove the SQL barrier between a question and an answer.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">The Problem</div>
+      <p>Most people who need data from a database can describe what they want in plain English but can't write the SQL to get it — and a generic language model doesn't reliably plan a multi-step query task or handle schemas it's never seen before.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Skills Used</div>
+      <div class="skills-used-list">
+        <span>Python</span>
+        <span>Pydantic-AI</span>
+        <span>Gradio</span>
+        <span>Hugging Face Spaces</span>
+        <span>Agentic planning</span>
+      </div>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Approach</div>
+      <p>Built the system on Pydantic-AI's structured agent framework so the agent plans out the query step by step before generating SQL, executes it against the database, and returns a clean result — all through a Gradio interface with zero setup for anyone trying it.</p>
+    </section>
+
+    <section class="detail-section reveal">
+      <div class="detail-section-label">Result</div>
+      <p>Deployed publicly on Hugging Face Spaces, live and usable by anyone with the link.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="detail-footer section-inner">
+  <a href="index.html#projects">&larr; All projects</a>
+  <a href="index.html#contact">Get in touch &rarr;</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
